@@ -36,24 +36,6 @@ install.packages("tidyverse")
 ```
 
 ---
-
-# Who am I?
-
-**Previously**
-
-Undergraduate in Psych here at UQ
-
-**Recently**
-
-Graduated PhD in Statistics
-
-**Currently**
-
-Research Fellow in Statistics at Monash University with [Di Cook](http://dicook.org/) and [Rob Hyndman](https://robjhyndman.com/) at [NUMBAT](http://numbat.space/)
-- organised the past three [rOpenSci unconferences](https://ropensci.org/)
-- On the organiser committee for UseR!
-
----
 class: center, inverse
 
 # Previously: Psychology
@@ -187,7 +169,7 @@ class: center, middle, inverse
 ---
 class: inverse, middle, center
 # What is rmarkdown?
-
+ 
 ---
 
 # How is rmarkdown designed to be used?
