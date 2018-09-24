@@ -3,12 +3,12 @@ title: "Rmarkdown example"
 author: "Nicholas Tierney"
 bibliography: packages.bib
 output:
-  pdf_document:
-    toc: yes
   html_document:
     keep_md: yes
     toc: yes
     toc_float: yes
+  pdf_document:
+    toc: yes
   word_document:
     toc: yes
 csl: bmj.csl
@@ -23,6 +23,15 @@ knitr::opts_chunk$set(echo = TRUE,
 ```{r library}
 
 library(tidyverse)
+
+```
+
+I want to have a quick look at the data, to see what I'm dealing with:
+
+```{r}
+library(visdat)
+
+vis_dat(airquality)
 
 ```
 
@@ -89,6 +98,8 @@ ggplot(tidy_aq,
 
 To explore the relationships between Ozone and all of the variables in the dataset, we can fit a basic linear model, with Ozone as the outcome, and all other variables as the predictors. We can express this as:
 
+**perhaps this sentence...**
+
 $$
 Ozone \sim \beta_0 + \beta_1Solar + \beta_2 Wind + \beta_3Temp + \epsilon
 $$
@@ -97,7 +108,6 @@ $$
 And we can fit this model using the code below.
 
 ```{r data-model}
-
 lm_aq <- lm(ozone_ppb ~ solar_rad_lang + wind_mph + temp_fah,
             data = tidy_aq)
 

@@ -1,5 +1,23 @@
 # UQ Open Science Rmarkdown
 
+# What you need to do this course
+
+1. R
+    - Linux (https://cran.r-project.org/bin/linux/)
+    - Mac OS (https://cran.r-project.org/bin/macosx/)
+    - Windows (https://cran.r-project.org/bin/windows/base/)
+1. RStudio - http://rstudio.com/products/rstudio/download
+1. rmarkdown packages
+
+
+```r
+# install tinytex (for PDF documents)
+install.packages('tinytex')
+tinytex::install_tinytex()
+```
+
+# Points to cover
+
 Here are some of the things that I want to cover today
 
 - Basics of rmarkdown
@@ -18,14 +36,6 @@ Here are some of the things that I want to cover today
   - books
   - websites
 - Produce mathematical equations
-
-# What you need to do the course
-
-```r
-# install tinytex (for PDF documents)
-install.packages('tinytex')
-tinytex::install_tinytex()
-```
 
 # The breakdown
 

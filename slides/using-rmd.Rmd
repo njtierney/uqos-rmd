@@ -1,8 +1,8 @@
 ---
 title: "Using Rmarkdown For Science"
 subtitle: ""
-author: "Nicholas Tierney"
-date: "2018/09/23"
+author: "Nicholas Tierney <br> <br> Monash University"
+date: "Monday 24th September, 2018"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -17,23 +17,13 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-# Please go to this link and click "download"
-
-https://github.com/njtierney/uqos-rmd
+class: center, inverse
 
 
-```{r out.width = "40%", echo  = FALSE}
-knitr::include_graphics("gh-dl.png")
-```
-
-You will also need to have these packages installed:
-
-```r
-install.packages("knitr")
-install.packages("tinytex")
-install.packages("rmarkdown")
-install.packages("tidyverse")
-```
+background-image: url(https://njtierney.updog.co/gifs/who-ami-i.gif)
+background-size: contain
+background-position: 50% 50%
+class: center, bottom
 
 ---
 class: center, inverse
@@ -169,6 +159,8 @@ class: center, middle, inverse
 ---
 class: inverse, middle, center
 # What is rmarkdown?
+
+Demo 
  
 ---
 
@@ -207,6 +199,28 @@ For collaborating with other data scientists (including future you!), who are in
   - how to run the whole document
   - How does the formatting of markdown work?
   - shortcuts for creating chunks
+
+---
+
+# Installation
+
+.largep[
+https://github.com/njtierney/uqos-rmd
+]
+
+```{r out.width = "50%", echo  = FALSE}
+knitr::include_graphics("https://njtierney.updog.co/img/uqos-rmd-dl.png")
+```
+
+You will also need to have these packages installed:
+
+```r
+install.packages("knitr")
+install.packages("tinytex")
+install.packages("rmarkdown")
+install.packages("tidyverse")
+```
+
 
 ---
 class: inverse
@@ -274,7 +288,9 @@ class: inverse, middle, center
 Go to `02-rmd-figures-chunks/02-rmd-figures-chunks.Rmd`
 
 Change the fig.width, fig.height, and dev of the figure in plot-1
+
 Add an option to keep the markdown source code (hint: look at the gear icon next to `knit`)
+
 Print the code for one of the figures, but not the other (hint: use `echo = `)
 
 
@@ -307,7 +323,9 @@ class: inverse, middle, center
 Go to `03-rmd-lm-tables-inline-eqn/03-rmd-lm-tables-inline-eqn.Rmd`
 
 Make a table
+
 Make some inline code chunks
+
 Make an equation describing the linear model used
   
 ---
@@ -334,12 +352,14 @@ Make an equation describing the linear model used
 - Setting all of these options can be a bit annoying - but there is a better way
 
 ---
-class: inverse, middle, center
+class: inverse, middle
+.center[
 # Your turn
+]
 
-- Go to `04-rmd-global-opts-device/04-rmd-global-opts-device.Rmd`
+Go to `04-rmd-global-opts-device/04-rmd-global-opts-device.Rmd`
 
-- set a global option to: 
+Set a global option to: 
   - hide all of the code
   - set the graphics device
   - set the DPI
